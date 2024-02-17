@@ -1,5 +1,5 @@
 # Use the official Node.js 14 image as the base image
-FROM node:16-alpine
+FROM node:hydrogen-slim
 
 # Set the working directory inside the container
 WORKDIR /app/backend
@@ -8,7 +8,7 @@ WORKDIR /app/backend
 #COPY package*.json .
 
 # Install dependencies
-#RUN npm install
+#RUN nodejs install
 
 # Copy the rest of the application code into the container
 COPY . .
